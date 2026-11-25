@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowSkin - Vente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>GlowSkin</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Produits</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="vente.html">Vente</a>
+    </nav>
+</header>
+
+<h2 class="titre">Formulaire de Vente</h2>
+
+<form id="myForm">
+
+    <label>Nom :</label>
+    <input type="text" id="nom">
+
+    <label>Prénom :</label>
+    <input type="text" id="prenom">
+
+    <label>Email :</label>
+    <input type="text" id="email">
+
+    <label>Téléphone :</label>
+    <input type="text" id="telephone">
+
+    <label>Adresse :</label>
+    <input type="text" id="adresse">
+
+    <label>Choisir les produits :</label>
+
+    <div class="jeux">
+
+        <label>
+            <input type="checkbox" name="produit" value="Gel Nettoyant" data-prix="35">
+            Gel Nettoyant - 35 DT
+        </label>
+
+        <label>
+            <input type="checkbox" name="produit" value="Crème Hydratante" data-prix="45">
+            Crème Hydratante - 45 DT
+        </label>
+
+        <label>
+            <input type="checkbox" name="produit" value="Sérum Visage" data-prix="55">
+            Sérum Visage - 55 DT
+        </label>
+
+        <label>
+            <input type="checkbox" name="produit" value="Crème Solaire SPF 50" data-prix="40">
+            Crème Solaire SPF 50 - 40 DT
+        </label>
+
+        <label>
+            <input type="checkbox" name="produit" value="Masque Visage" data-prix="25">
+            Masque Visage - 25 DT
+        </label>
+
+        <label>
+            <input type="checkbox" name="produit" value="Eau Micellaire" data-prix="30">
+            Eau Micellaire - 30 DT
+        </label>
+
+    </div>
+
+    <label>Total du prix :</label>
+    <input type="text" id="total" readonly>
+
+    <button type="submit">Acheter</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+<h2 class="titre">Liste des Clients</h2>
+
+<table id="tableClients">
+    <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Email</th>
+        <th>Téléphone</th>
+        <th>Adresse</th>
+        <th>Produits</th>
+        <th>Total</th>
+        <th>Action</th>
+    </tr>
+</table>
+
+<footer>
+    <p>© 2026 GlowSkin - Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
